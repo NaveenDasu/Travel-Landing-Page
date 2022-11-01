@@ -1,0 +1,285 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+
+}
+
+div.line{
+      height: 4px;
+    width: 15%;
+    background-color: green;
+}
+#co{
+  color: green !important;
+  font-weight: bold;
+}
+
+#act{
+  background-color: green !important;
+}
+
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.bg-img {
+
+  /* The image used */
+  background-image: url("dol.jpg");
+
+  min-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  /* Needed to position the navbar */
+  position: relative;
+}
+.navbar-nav {
+      flex-direction: row;
+      text-align: right;
+      color: white;
+    }
+    
+    .nav-link {
+      padding-right: .5rem !important;
+      padding-left: .5rem !important;
+      color: white !important;
+    }
+
+.nav-link active{
+  background-color: green !important;
+}
+
+    
+    /* Fixes dropdown menus placed on the right side */
+    .ml-auto .dropdown-menu {
+      left: auto !important;
+      right: 0px;
+      color:white;
+    }
+
+
+/*CSS for very first background image*/
+
+
+
+
+/*About US CSS*/
+#team-wrapper{
+
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+
+.team-item{
+
+    width:25%;
+    text-align:center;
+    background-color: #f5f6fb;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 20px;
+    transition: all 0.3s;
+
+}
+.team-item:hover{
+    box-shadow: 5px 5px 2px 1px rgba(67, 67, 70, 0.2);
+    transform: scale(1.05,1.05);
+}
+.team-item>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+}
+.team-item div i{
+    font-size: 20px;
+    padding: 5px;
+}
+.team-item div i:nth-child(1){
+    color: rgb(255, 38, 0);
+}
+.team-item div i:nth-child(2){
+    color: blue;
+}
+.team-item div i:nth-child(3){
+    color: rgb(161, 161, 8);
+}
+.team-item div i:nth-child(4){
+    color: purple;
+}
+.team-item div i:nth-child(5){
+    color:#195e83;
+}
+.member-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.member-name{
+    padding: 10px;
+}
+
+.member-message {
+    font-size: 14px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.member-item h3 {
+    font-size: 15px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.member-designation {
+    color: #8b8b99;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding-top: 30px;
+    padding: 20px;
+}
+
+@media (max-width:350px) {
+
+#team-wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .team-item{
+        width: 80%;
+    }
+    .team-item:nth-child(2){
+        order: 1;
+    }
+    .team-item:nth-child(1){
+        order: 2;
+    }
+    .team-item:nth-child(3){
+        order: 3;
+    }
+    .team-item:nth-child(4){
+        order: 4;
+    }
+    .team-item:nth-child(5){
+        order: 5;
+    }
+    .team-item:nth-child(6){
+        order: 6;
+    }
+    .team-item>p {
+        padding: 10px;
+    } 
+  }
+
+@media (max-width:700px) and (min-width:350px){
+
+  #team-wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .team-item:nth-child(2){
+        order: 1;
+    }
+    .team-item:nth-child(1){
+        order: 2;
+    }
+    .team-item:nth-child(3){
+        order: 3;
+    }
+    .team-item:nth-child(4){
+        order: 4;
+    }
+    .team-item:nth-child(5){
+        order: 5;
+    }
+    .team-item:nth-child(6){
+        order: 6;
+    }
+    .team-item{
+        width: 80%;
+    }
+    .team-item>p {
+        padding: 10px;
+    } 
+  }
+
+@media (max-width:1000px) and (min-width:700px){
+
+   #team-wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .team-item{
+        width: 80%;
+    }
+    .team-item:nth-child(2){
+        order: 1;
+    }
+    .team-item:nth-child(1){
+        order: 2;
+    }
+    .team-item:nth-child(3){
+        order: 3;
+    }
+    .team-item:nth-child(4){
+        order: 4;
+    }
+    .team-item:nth-child(5){
+        order: 5;
+    }
+    .team-item:nth-child(6){
+        order: 6;
+    }
+    .team-item>p {
+        padding: 10px;
+    } 
+}
+
+selector svg{
+  fill: green;
+}
+
+#mypayment {
+        max-width: 960px;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      } 
+
+.row-change {
+          margin: 15px;
+        }
